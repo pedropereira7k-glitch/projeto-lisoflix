@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.cabecalho-principal {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #e50914;
+}
+
+.logo-marca {
+  color: #e50914;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.lista-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.link-menu {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-menu:hover {
+  color: #e50914;
+}
+
+.conteudo-principal, .container-principal {
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.secao-banner {
+  background-color: #1f1f1f;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #333333;
+}
+
+.card-atalho, .card-filme {
+  display: inline-block;
+  width: 210px;
+  background-color: #1f1f1f;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.capa-filme {
+  width: 100%;
+  height: 330px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.poster-grande {
+  width:  280px;
+  border-radius: 8px;
+  border: 2px solid #333333;
+}
+
+.lista-externa, .lista-elenco{
+  list-style: none;
+  padding: 0;
+}
+
+.link-externo, .link-card, .link-voltar{
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabela-padrao {
+  width: 80%;
+  margin: 25px auto;
+  border-collapse: collapse;
+  background-color: #1f1f1f;
+}
+
+.tabela-padrao th, tabela-padrao td {
+  border: 1px solid #444444;
+  padding: 12px;
+  text-align: center;
+}
+
+.tabela-padrao th{
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+.formulario-contato{
+  width: 400px;
+  margin: 20px auto;
+  background-color: #1f1f1f;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.formulario-contato label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.formulario-contato input, .formulario-contato select, .formulario-contato textarea{
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #555555;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.botao-vermelho, .botao-detalhes{
+  display: inline-block;
+  background-color: #e50914;
+  color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 15px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao-vermelho:hover, .botao-detalhes:hover{
+  background-color: #b20710;
+}
+
+.botao-lista {
+  display: inline-block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rodape-principal {
+  background-color: #000000;
+  color: #888888;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-top: 1px solid #333333;
+}
+
+.texto-rodape {
+  margin: 0;
+}

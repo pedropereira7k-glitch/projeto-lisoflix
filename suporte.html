@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>LisoFlix - Suporte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho-principal">
+      <div class="logo-marca">LisoFlix</div>
+      <nav class="menu-navegacao"> 
+        <ul class="lista-links">
+          <li><a href="index.html" class="link-menu">Início</a></li>
+          <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
+          <li><a href="planos.html" class="link-menu">Planos</a></li>
+          <li><a href="suporte.html" class="link-menu">Suporte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteudo-principal">
+      
+      <div class="container-principal">
+        
+        <h2>Assinatura e Pedidos de Filmes</h2>
+
+        <p>
+          Preencha os dados abaixos para falar com nossa equipe no WhatsApp.
+        </p>
+
+        <form class="formulario-contato">
+
+          <label for="nome">Seu Nome:</label>
+          <input type="text" id="nome" placeholder="Digite seu nome">
+
+          <label for="plano">Plano ou Pedido:</label>
+          <select id="plano">
+            <option value="Plano Basico">Plano Básico (R$ 19,90)</option>
+            <option value="Plano Padrao">Plano Padrão (R$ 29,90)</option>
+            <option value="Plano Premium">Plano Premium (44,90)</option>
+            <option value="Sugestao de Filme">Sugerir Filme ou Série</option>
+          </select>
+
+          <label for="mensagem">Mensagem ou Nome do Filme ou Série</label>
+          <textarea id="mensagem" rows="4" placeholder="Escreva aqui..."></textarea>
+          <button type="button" class="botao-vermelho" onclick="enviarWhatsApp()">Enviar via WhatsApp</button>
+          
+        </form>
+      </div>
+    </main>
+
+    <footer class="rodape-principal">
+      <p class="texto-rodape">LisoFlix 2026 - Projeto Acadêmico de Programação Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

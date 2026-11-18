@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Detalhes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho-principal">
+      <div class="logo-marca">LisoFlix</div>
+      <nav class="menu-navegacao">
+        <ul class="lista-links">
+          <li><a href="index.html" class="link-menu">Início</a></li>
+          <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
+          <li><a href="planos.html" class="link-menu">Planos</a></li>
+          <li><a href="suporte.html" class="link-menu">Suporte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteudo-principal">
+
+      <section class="secao-detalhes">
+        <a href="catalogo.html" class="link-voltar">Voltar ao Catálogo</a>
+        <div class="cabecalho-obra">
+          <img src="imagens/filme3.jpg" alt="Capa Breaking Bad" class="poster-grande">
+          <div class="info-obra">
+            <h1 class="titulo-pagina">Breaking Bad (Série Destaque)</h1>
+            <p class="paragrafo-texto">
+              Sinopse: Walter White (Bryan Cranston) é um professor de química na casa dos 50 anos que trabalha em uma escola secundária no Novo México. Para atender às necessidades de Skyler (Anna Gunn), sua esposa grávida, e Walt Junior (RJ Mitte), seu filho deficiente físico, ele tem que trabalhar duplamente. Sua vida fica ainda mais complicada quando descobre que está sofrendo de um câncer de pulmão incurável. Para aumentar rapidamente a quantidade de dinheiro que deixaria para sua família após sua morte, Walter usa seu conhecimento de química para fazer e vender metanfetamina, uma droga sintética. Ele conta com a ajuda do ex-aluno e pequeno traficante Jesse (Aaron Paul) e enfrenta vários desafios, incluindo o fato de seu concunhado ser um importante nome dentro da Agência Anti-Drogas da região.
+            </p>
+            <button type="button" onclick="avisoAssistir()" class="botao-vermelho">Assistir Episódio 1</button>
+            <h3 class="subtitulo-link">Elenco Principal</h3>
+            <ul class="lista-elenco">
+              <li>Bryan Cranston (Walter White)</li>
+              <li>Aaron Paul (Jesse Pickman)</li>
+              <li>Anna Gunn (Skyler White)</li>
+              <li>Dean Norris(Hank Schrader)</li>
+              <li>Betsy Brandt (Marie Schrader)</li>
+              <li>RJ Mitte (Walter White Jr.)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="titulo-secao">Guia de Episódios - Temporada 1</h2>
+        <table class="tabela-padrao">
+          <thead>
+            <tr>
+              <th>Episódio</th>
+              <th>Título do Episódio</th>
+              <th>Duração</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Episódio 01</td>
+              <td>Pilot</td>
+              <td>58 Minutos</td>
+            </tr>
+            <tr>
+              <td>Episódio 02</td>
+              <td>Cat's in the Bag...</td>
+              <td>48 Minutos</td>
+            </tr>
+            <tr>
+              <td>Episódio 03</td>
+              <td>...And the Bag's in the River</td>
+              <td>48 minutos</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="rodape-principal">
+      <p class="texto-rodape">LisoFlix 2026 - Projeto Acadêmcio de Programação Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
