@@ -3,78 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title>LisoFlix - Planos de Assinatura</title>
+  <meta name="description" content="Confira os planos disponíveis no LisoFLix.">
+  <title>Planos | LisoFLix</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <header class="cabecalho-principal">
-      <div class="logo-marca">PobreFlix</div>
-      <nav class="menu-navegacao">
-        <ul class="lista-links">
-          <li><a href="index.html" class="link-menu">Início</a></li>
-          <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
-          <li><a href="planos.html" class="link-menu">Planos</a></li>
-          <li><a href="suporte.html" class="link-menu">Suporte</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="cabecalho-principal">
+    <div class="logo-marca">LisoFLix</div>
 
-    <main class="conteudo-principal">
-      
-      <div class="container-principal">
-        <h2>Escolha seu Plano</h2>
-        <p>
-          Compare as opções e e assine pelo nosso atedimento.
+    <nav class="menu-navegacao" aria-label="Menu principal">
+      <ul class="lista-links">
+        <li><a href="index.html" class="link-menu">Início</a></li>
+        <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
+        <li><a href="planos.html" class="link-menu" aria-current="page">Planos</a></li>
+        <li><a href="suporte.html" class="link-menu">Suporte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo-principal">
+
+    <section class="introducao-planos">
+      <span class="etiqueta-detalhes">Escolha sua experiência</span>
+
+      <h1 class="titulo-pagina">Um plano para cada momento</h1>
+
+      <p class="descricao-planos">
+        Compare as opções e escolha aquela que combina com a sua
+        maneira de assistir.
+      </p>
+    </section>
+
+    <section class="secao-planos">
+
+      <article class="card-plano">
+        <h2 class="nome-plano">Básico</h2>
+
+        <p class="descricao-plano">
+          Para quem quer aproveitar sem complicação.
         </p>
-      
-      
-        <table class="tabela-padrao">
-        
-          <thead>
-            <tr>
-              <th>Plano</th>
-              <th>Qualidade</th>
-              <th>Telas Simultâneas</th>
-              <th>Preço Mensal</th>
-            </tr>
-          </thead>
 
-          <tbody>
+        <p class="preco-plano">
+          <strong>R$ 14,90</strong>
+          <span>/ mês</span>
+        </p>
 
-            <tr>
-              <td>Básico</td>
-              <td>720p (HD)</td>
-              <td>1 tela</td>
-              <td>R$ 19,90</td>
-            </tr>
+        <ul class="lista-beneficios">
+          <li>Acesso ao catálogo</li>
+          <li>Qualidade de imagem HD</li>
+          <li>1 tela simultânea</li>
+        </ul>
 
-            <tr>
-              <td>Padrão</td>
-              <td>1080p (Full HD)</td>
-              <td>2 telas</td>
-              <td>R$ 29,90</td>
-            </tr>
+        <a href="suporte.html" class="botao-plano">
+          Tenho interesse
+        </a>
+      </article>
 
-            <tr>
-              <td>Premium</td>
-              <td>4k (Ultra HD)</td>
-              <td>4 telas</td>
-              <td>R$ 44,90</td>
-            </tr>
+      <article class="card-plano plano-destaque">
+        <span class="etiqueta-destaque">Mais completo</span>
 
-          </tbody>
+        <h2 class="nome-plano">Padrão</h2>
 
-        </table>
-        <a href="suporte.html" class="botao-vermelho">Quero Assinar Agora</a>
-      </div>
+        <p class="descricao-plano">
+          Mais conforto para aproveitar seus títulos favoritos.
+        </p>
 
-    </main>
+        <p class="preco-plano">
+          <strong>R$ 24,90</strong>
+          <span>/ mês</span>
+        </p>
 
-    <footer class="rodape-principal">
-      <p class="texto-rodape">LisoFlix 2026 - Projeto Acadêmico de Programação Web</p>
-    </footer>
-    <script src="script.js"></script>
+        <ul class="lista-beneficios">
+          <li>Acesso ao catálogo</li>
+          <li>Qualidade Full HD</li>
+          <li>2 telas simultâneas</li>
+        </ul>
+
+        <a href="suporte.html" class="botao-plano">
+          Tenho interesse
+        </a>
+      </article>
+
+      <article class="card-plano">
+        <h2 class="nome-plano">Premium</h2>
+
+        <p class="descricao-plano">
+          Para quem não quer perder nenhum detalhe.
+        </p>
+
+        <p class="preco-plano">
+          <strong>R$ 34,90</strong>
+          <span>/ mês</span>
+        </p>
+
+        <ul class="lista-beneficios">
+          <li>Acesso ao catálogo</li>
+          <li>Qualidade 4K</li>
+          <li>4 telas simultâneas</li>
+        </ul>
+
+        <a href="suporte.html" class="botao-plano">
+          Tenho interesse
+        </a>
+      </article>
+
+    </section>
+
+    <section class="observacao-planos">
+      <p>
+        O LisoFLix é um projeto acadêmico. Os planos e valores apresentados
+        são ilustrativos e não representam uma assinatura real.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="rodape-principal">
+    <p class="texto-rodape">
+      LisoFLix © 2026 — Projeto acadêmico de Programação Web
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,89 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
-    <title>Início - LisoFLix</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <header class="cabecalho-principal">
-      <div class="logo-marca">LisoFLix</div>
-      <nav class="menu-navegacao">
-        <ul class="lista-links">
-          <li><a href="index.html" class="link-menu">Início</a></li>
-          <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
-          <li><a href="planos.html" class="link-menu">Planos</a></li>
-          <li><a href="suporte.html" class="link-menu">Suporte</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o LisoFLix, explore filmes e séries e encontre seu próximo título favorito.">
+  <title>Início | LisoFLix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <main class="conteudo-principal">
-      <section id="banner-destaque" class="secao-banner">
-        <div class="conteudo-banner">
-          <h1 class="titulo-banner">Bem-vindo ao PobreFlix</h1>
-          <p class="subtitulo-banner">
-            Os melhores filmes e séries reunidos em um só lugar para você assistir quando quiser.
-          </p>
-          <a href="catalogo.html" class="botao-vermelho">Explorar Catálogo</a>
-        </div>
-      </section>
+<body>
+  <header class="cabecalho-principal">
+    <div class="logo-marca">LisoFLix</div>
 
-      <section class="secao-sobre">
-        <h2 class="titulo-secao">O que é o PobreFlix?</h2>
-        <p class="paragrafo-texto">
-          Uma plataforma de streaming criada para organizar catálogos de cinema, séries premiadas e
-          lançamentos em alta definição.
+    <nav class="menu-navegacao" aria-label="Menu principal">
+      <ul class="lista-links">
+        <li><a href="index.html" class="link-menu" aria-current="page">Início</a></li>
+        <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
+        <li><a href="planos.html" class="link-menu">Planos</a></li>
+        <li><a href="suporte.html" class="link-menu">Suporte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo-principal">
+
+    <section id="banner-destaque" class="secao-banner">
+      <div class="conteudo-banner">
+        <h1 class="titulo-banner">Sua próxima história começa aqui.</h1>
+
+        <p class="subtitulo-banner">
+          Explore filmes e séries de diferentes gêneros e encontre algo
+          interessante para assistir.
         </p>
-        <h3 class="subtitulo-links">Links Externos de Cinema e Crítica</h3>
-        <ul class="lista-externa">
-          <li>
-            <a
-              href="https://www.imdb.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-externo"
-            >
-              Acessar IMDb (Notas e Elenco)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.rottentomatoes.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-externo"
-            >
-              Acessar Rotten Tomatoes (Críticas)
-            </a>
-          </li>
-        </ul>
-      </section>
 
-      <section class="secao-atalhos">
-        <h2 class="titulo-secao">Navegue por Tópicos</h2>
-        <div class="grande-atalhos">
-          <div class="card-atalho">
-            <h3>Catálogo Completo</h3>
-            <p>Veja nossa lista de filmes e séries organizados por gênero.</p>
-            <a href="catalogo.html" class="link-card">Ir para o Catálogo</a>
-          </div>
+        <a href="catalogo.html" class="botao-vermelho">
+          Explorar catálogo
+        </a>
+      </div>
+    </section>
 
-          <div class="card-catalogo">
-            <h3>Planos e Valores</h3>
-            <p>Compare as opções de assinatura mensal e qualidade de tela.</p>
-            <a href="planos.html" class="link-card">Ver Planos</a>
-          </div>
+    <section class="secao-sobre">
+      <h2 class="titulo-secao">Sobre o LisoFLix</h2>
+
+      <p class="paragrafo-texto">
+        O LisoFLix é um projeto acadêmico desenvolvido para reunir
+        informações sobre filmes e séries em um só lugar. Aqui você pode
+        conhecer títulos, consultar detalhes e conferir opções de planos.
+      </p>
+
+      <h3 class="subtitulo-links">Explore também</h3>
+
+      <ul class="lista-externa">
+        <li>
+          <a
+            href="https://www.imdb.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-externo"
+          >
+            IMDb — informações sobre filmes e elenco
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.rottentomatoes.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-externo"
+          >
+            Rotten Tomatoes — críticas e avaliações
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="secao-atalhos">
+      <h2 class="titulo-secao">Conheça a plataforma</h2>
+
+      <div class="grande-atalhos">
+        <div class="card-atalho">
+          <h3>Catálogo</h3>
+          <p>
+            Confira os filmes e séries disponíveis e descubra novos títulos.
+          </p>
+          <a href="catalogo.html" class="link-card">
+            Acessar catálogo
+          </a>
         </div>
-      </section>
-    </main>
 
-    <footer class="rodape-principal">
-      <p class="texto-rodape">LisoFLix 2026 - Projeto Acadêmico de Programação Web</p>
-    </footer>
+        <div class="card-atalho">
+          <h3>Planos</h3>
+          <p>
+            Compare as opções de assinatura e veja as características de cada plano.
+          </p>
+          <a href="planos.html" class="link-card">
+            Conhecer planos
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+  </main>
+
+  <footer class="rodape-principal">
+    <p class="texto-rodape">
+      LisoFLix © 2026 — Projeto acadêmico de Programação Web
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

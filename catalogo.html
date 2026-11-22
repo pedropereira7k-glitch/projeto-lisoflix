@@ -3,69 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title>Catálogo - LisoFlix</title>
+  <meta name="description" content="Explore o catálogo de filmes e séries do LisoFlix.">
+  <title>Catálogo | LisoFlix</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="cabecalho-principal">
-      <div class="logo-marca">LisoFlix</div>
-      <nav class="menu-navegacao">
-        <ul class="lista-links">
-          <li><a href="index.html" class="link-menu">Início</a></li>
-          <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
-          <li><a href="planos.html" class="link-menu">Planos</a></li>
-          <li><a href="suporte.html" class="link-menu">Suporte</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="cabecalho-principal">
+    <div class="logo-marca">LisoFlix</div>
 
-    <main class="conteudo-principal">
+    <nav class="menu-navegacao" aria-label="Menu principal">
+      <ul class="lista-links">
+        <li><a href="index.html" class="link-menu">Início</a></li>
+        <li><a href="catalogo.html" class="link-menu" aria-current="page">Catálogo</a></li>
+        <li><a href="planos.html" class="link-menu">Planos</a></li>
+        <li><a href="suporte.html" class="link-menu">Suporte</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <section class="secao-busca">
-        <h1 class="titulo-pagina">Catálogo de Filmes e Séries</h1>
-        <input type="text" id="campo-busca" class="input-pesquisa" placeholder="Digite o nome do filme...">
-      </section>
+  <main class="conteudo-principal">
 
-      <section class="secao-catalogo">
-        <div id="lista-filmes" class="grade-filmes">
-          <div class="card-filme">
-            <img src="imagens/filme1.jpg" alt="Capa Seven" class="capa-filme">
+    <section class="secao-busca">
+      <h1 class="titulo-pagina">Nosso catálogo</h1>
+
+      <p class="descricao-catalogo">
+        Histórias que prendem sua atenção do começo ao fim.
+        Escolha um título e descubra mais.
+      </p>
+
+      <label for="campo-busca" class="rotulo-busca">
+        Pesquisar título
+      </label>
+
+      <input
+        type="search"
+        id="campo-busca"
+        class="input-pesquisa"
+        placeholder="Digite o nome de um filme ou série..."
+      >
+    </section>
+
+    <section class="secao-catalogo">
+      <h2 class="titulo-secao">Todos os títulos</h2>
+
+      <div id="lista-filmes" class="grade-filmes">
+
+        <article class="card-filme" data-titulo="seven">
+          <img
+            src="imagens/filme1.jpg"
+            alt="Pôster do filme Seven"
+            class="capa-filme"
+          >
+
+          <div class="informacoes-filme">
             <h3 class="titulo-filme">Seven</h3>
-            <p class="genero-filme">
-              Crime / Mistério / Thriller
-            </p>
-            <a href="https://www.imdb.com/pt/title/tt0114369/" target="_blank" rel="noopener noreferrer" class="botao-detalhes">Ver Detalhes</a>
-            <button type="<button" class="botao-lista" onclick="alternativeLista(this)">+ Minha Lista</button>
+            <p class="genero-filme">Crime / Mistério / Thriller</p>
+
+            <a
+              href="https://www.imdb.com/pt/title/tt0114369/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="botao-detalhes"
+            >
+              Ver detalhes
+            </a>
+
+            <button type="button" class="botao-lista" data-filme="Seven">
+              + Minha Lista
+            </button>
           </div>
+        </article>
 
-        <div class="card-filme">
-          <img src="imagens/filme2.jpg" alt="Capa Cidade de Deus" class="capa-filme">
-          <h3 class="titulo-filme">Cidade de Deus</h3>
-          <p class="genero-filme">
-            Drama / Policial
-          </p>
-          <a href="https://www.imdb.com/pt/title/tt0317248/" target="_blank" rel="noopener noreferrer" class="botao-detalhes">Ver Detalhes</a>
-          <button type="button" class="botao-lista" onclick="alternativeLista(this)">+ Minha Lista</button>
-        </div>
+        <article class="card-filme" data-titulo="cidade de deus">
+          <img
+            src="imagens/filme2.jpg"
+            alt="Pôster do filme Cidade de Deus"
+            class="capa-filme"
+          >
 
-        <div class="card-filme">
-          <img src="imagens/filme3.jpg" alt="Capa Breaking Bad" class="capa-filme">
-          <h3 class="titulo-filme">Breaking Bad</h3>
-          <p class="genero-filme">
-            Drama Criminal / Suspense
-          </p>
-          <a href="detalhes.html" class="botao-detalhes">Ver Detalhes</a>
-          <button type="button" class="botao-lista" onclick="alternativeLista(this)">+ Minha Lista</button>
-        </div>
-        </div>
-      </section>
+          <div class="informacoes-filme">
+            <h3 class="titulo-filme">Cidade de Deus</h3>
+            <p class="genero-filme">Drama / Policial</p>
 
-    </main>
+            <a
+              href="https://www.imdb.com/pt/title/tt0317248/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="botao-detalhes"
+            >
+              Ver detalhes
+            </a>
 
-    <footer class="rodape-principal">
-      <p class="texto-rodape">LisoFlix 2026 - Projeto Acadêmico de Programação</p> 
-    </footer>
-    <script src="script.js"></script>
-</body> 
+            <button type="button" class="botao-lista" data-filme="Cidade de Deus">
+              + Minha Lista
+            </button>
+          </div>
+        </article>
+
+        <article class="card-filme" data-titulo="breaking bad">
+          <img
+            src="imagens/filme3.jpg"
+            alt="Pôster da série Breaking Bad"
+            class="capa-filme"
+          >
+
+          <div class="informacoes-filme">
+            <h3 class="titulo-filme">Breaking Bad</h3>
+            <p class="genero-filme">Drama Criminal / Suspense</p>
+
+            <a href="detalhes.html" class="botao-detalhes">
+              Ver detalhes
+            </a>
+
+            <button type="button" class="botao-lista" data-filme="Breaking Bad">
+              + Minha Lista
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="mensagem-vazia" class="mensagem-vazia" hidden>
+        Nenhum título encontrado. Tente outra pesquisa.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="rodape-principal">
+    <p class="texto-rodape">
+      LisoFLix © 2026 — Projeto acadêmico de Programação Web
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
