@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça mais sobre Breaking Bad no LisoFLix.">
-  <title>Breaking Bad | LisoFLix</title>
+  <meta name="description" content="Conheça os detalhes dos filmes e séries do LisoFLix.">
+  <title>Detalhes | LisoFLix</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,22 +28,28 @@
 
       <div class="imagem-detalhes">
         <img
+          id="imagem-filme"
           src="imagens/filme3.jpg"
-          alt="Pôster da série Breaking Bad"
+          alt="Pôster do título selecionado"
           class="capa-detalhes"
         >
       </div>
 
       <div class="conteudo-detalhes">
-        <span class="etiqueta-detalhes">Série de televisão</span>
 
-        <h1 class="titulo-detalhes">Breaking Bad</h1>
+        <span class="etiqueta-detalhes" id="tipo-filme">
+          Série de televisão
+        </span>
 
-        <p class="informacoes-basicas">
+        <h1 class="titulo-detalhes" id="titulo-filme">
+          Breaking Bad
+        </h1>
+
+        <p class="informacoes-basicas" id="informacoes-filme">
           2008 – 2013 | 5 temporadas | Drama / Crime / Suspense
         </p>
 
-        <p class="sinopse-detalhes">
+        <p class="sinopse-detalhes" id="sinopse-filme">
           Walter White é um professor de química que recebe um diagnóstico
           de câncer e passa a enfrentar dificuldades financeiras. Ao lado
           de um antigo aluno, Jesse Pinkman, ele começa a produzir
@@ -51,9 +57,20 @@
         </p>
 
         <div class="dados-serie">
-          <p><strong>Criação:</strong> Vince Gilligan</p>
-          <p><strong>Elenco:</strong> Bryan Cranston, Aaron Paul e Anna Gunn</p>
-          <p><strong>Gêneros:</strong> Drama, crime e suspense</p>
+          <p>
+            <strong>Direção / Criação:</strong>
+            <span id="criacao-filme">Vince Gilligan</span>
+          </p>
+
+          <p>
+            <strong>Elenco:</strong>
+            <span id="elenco-filme">Bryan Cranston, Aaron Paul e Anna Gunn</span>
+          </p>
+
+          <p>
+            <strong>Gêneros:</strong>
+            <span id="generos-filme">Drama, crime e suspense</span>
+          </p>
         </div>
 
         <div class="botoes-detalhes">
@@ -62,6 +79,7 @@
           </a>
 
           <a
+            id="link-imdb"
             href="https://www.imdb.com/pt/title/tt0903747/"
             target="_blank"
             rel="noopener noreferrer"
@@ -70,8 +88,8 @@
             Mais informações
           </a>
         </div>
-      </div>
 
+      </div>
     </section>
 
   </main>
